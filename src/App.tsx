@@ -7,7 +7,7 @@ function App() {
         <div className="flex p-4 items-start justify-center">
           <div className="flex-1">
             <img
-              src="/bag-logo.jpeg"
+              src="/bag-logo-circle-smaller.png"
               width="128px"
               height="128px"
               alt="Business Advocacy Group logo"
@@ -35,12 +35,6 @@ function App() {
           <div className="grid grid-cols-2 gap-6 justify-start">
             <div className="text-right">Membership Mint Price:</div>
             <div className="text-left">0.005 ETH</div>
-
-            <div className="text-right">Additional Donation:</div>
-            <div className="text-left">
-              <input className="w-20 input-sm" placeholder="0.00" />{" "}
-              <span>ETH</span>
-            </div>
           </div>
           <div>
             <button className="btn btn-primary">Mint</button>
@@ -52,12 +46,11 @@ function App() {
             similique minus quo temporibus nulla, earum perferendis incidunt.
           </div>
           <footer className="flex gap-6 mx-auto">
-            <div>
+            <div className="underline">
               <a href="https://twitter.com/voxelsadvocacy" target="_blank">
                 @voxelsadvocacy
               </a>
             </div>
-            <div>[Donation QR Code]</div>
           </footer>
         </div>
       </main>
