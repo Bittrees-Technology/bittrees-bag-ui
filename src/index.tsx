@@ -12,7 +12,7 @@ import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider, webSocketProvider } = configureChains(
   [
-    chain.mainnet,
+    // chain.mainnet,
     ...(process.env.REACT_APP_ENABLE_TESTNETS === "true" ? [chain.goerli] : []),
   ],
   [
@@ -37,13 +37,11 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <App />
-      </RainbowKitProvider>
-    </WagmiConfig>
-  </React.StrictMode>
+  <WagmiConfig client={wagmiClient}>
+    <RainbowKitProvider chains={chains}>
+      <App />
+    </RainbowKitProvider>
+  </WagmiConfig>
 );
 
 // If you want to start measuring performance in your app, pass a function
