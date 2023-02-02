@@ -4,7 +4,7 @@ import { goerli } from "wagmi/chains";
 import { ethers } from "ethers";
 import { useState } from "react";
 
-const CONTRACT_ADDRESS = "0x3ed570c2917EC8bEa558174697F28B24fc09ec09";
+const CONTRACT_ADDRESS = "0xe0a513F4519386B26848BD8CBE39a800391a3Dbe";
 
 const mintPrice = "0.0100";
 
@@ -23,9 +23,9 @@ export function Mint() {
   const { config } = usePrepareContractWrite({
     address: CONTRACT_ADDRESS,
     abi,
-    functionName: "mint",
+    functionName: "mintMembership",
     chainId: goerli.id,
-    args: [address, 0, []],
+    args: [address],
     overrides: { value: ethers.utils.parseEther(total) },
   });
   const { isLoading, write } = useContractWrite(config);

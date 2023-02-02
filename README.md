@@ -10,7 +10,9 @@ Includes:
 
 ## Scripts
 
-### `REACT_APP_ENABLE_TESTNETS=true yarn startt`
+### `REACT_APP_ENABLE_TESTNETS=true yarn start`
+
+Make sure you bring in latest ABI!
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

@@ -18,7 +18,7 @@ const { chains, provider, webSocketProvider } = configureChains(
     ...(process.env.REACT_APP_ENABLE_TESTNETS === "true" ? [chain.goerli] : []),
   ],
   [
-    alchemyProvider({ apiKey: "_gg7wSSi0KMBsdKnGVfHDueq6xMB9EkC" }),
+    alchemyProvider({ apiKey: "yRGq74-J06-Vn6v1G5IsrexsW9KM_V-4" }),
     publicProvider(),
   ]
 );
