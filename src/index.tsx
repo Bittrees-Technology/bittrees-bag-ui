@@ -14,8 +14,9 @@ import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider, webSocketProvider } = configureChains(
   [
-    // chain.mainnet,
-    ...(process.env.REACT_APP_ENABLE_TESTNETS === "true" ? [chain.goerli] : []),
+    process.env.REACT_APP_ENABLE_TESTNETS === "true"
+      ? chain.goerli
+      : chain.mainnet,
   ],
   [
     alchemyProvider({ apiKey: "yRGq74-J06-Vn6v1G5IsrexsW9KM_V-4" }),
@@ -24,7 +25,7 @@ const { chains, provider, webSocketProvider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "React Rainbow Tailwind",
+  appName: "Builders Advocacy Group",
   chains,
 });
 
