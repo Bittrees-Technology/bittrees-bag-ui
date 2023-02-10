@@ -4,7 +4,7 @@ import { goerli } from "wagmi/chains";
 import { ethers } from "ethers";
 import { useState } from "react";
 
-const CONTRACT_ADDRESS = "0xe0a513F4519386B26848BD8CBE39a800391a3Dbe";
+const CONTRACT_ADDRESS = "0x6e8c260cB878489c8066Dd75536e5E9B5ca4C288";
 
 const mintPrice = "0.0100";
 
