@@ -19,7 +19,7 @@ const { chains, provider, webSocketProvider } = configureChains(
       : chain.mainnet,
   ],
   [
-    alchemyProvider({ apiKey: "yRGq74-J06-Vn6v1G5IsrexsW9KM_V-4" }),
+    alchemyProvider({ apiKey: "MY6sRxkJ6Jeo6Pd_6XvgrmvXJFbrQE0w" }),
     publicProvider(),
   ]
 );
