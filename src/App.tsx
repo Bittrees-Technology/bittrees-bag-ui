@@ -28,7 +28,7 @@ function App() {
             <div>Coming Soon!</div>
           </div>
 
-          <footer className="flex flex-row gap-6 mx-auto mt-8 items-center justify-around">
+          <footer className="flex flex-col md:flex-row gap-6 mx-auto mt-8 items-center justify-around">
             <div className="underline w-60">
               <a
                 href="https://twitter.com/voxelsadvocacy"
@@ -38,7 +38,7 @@ function App() {
                 @voxelsadvocacy
               </a>
             </div>
-            <div className="w-80 flex justify-center">
+            <div className="flex justify-center">
               <Link to="/mint">
                 <img
                   src="/bag-logo-circle-smaller.png"
