@@ -19,7 +19,7 @@ function MintPage() {
           <div className="mx-auto">
             <div className="text-xl">BAG Membership</div>
             <img
-              src="/bag-briefcase.jpeg"
+              src="/bag-briefcase.png"
               width="256px"
               height="256px"
               alt="Business Advocacy Group logo"

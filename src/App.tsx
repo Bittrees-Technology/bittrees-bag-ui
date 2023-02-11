@@ -13,10 +13,10 @@ function App() {
       <main className="text-center bg-[#eef3ee]">
         <div className="flex flex-col gap-6 p-6">
           <div className="mx-auto border border-black p-4 w-80 h-80">
-            <Link to="/mint">
+            <Link to="/mint" className="flex flex-col items-center">
               <div className="text-xl">Mint Membership</div>
               <img
-                src="/bag-briefcase.jpeg"
+                src="/bag-briefcase.png"
                 width="256px"
                 height="256px"
                 alt="Business Advocacy Group logo"
