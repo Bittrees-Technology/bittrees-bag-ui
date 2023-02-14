@@ -7,15 +7,12 @@ function MintPage() {
       <header className="bg-primary h-56">
         <div className="flex p-4 items-start justify-center">
           <div className="flex-1">&nbsp;</div>
-          <div className="flex-0">
-            <ConnectButton />
-          </div>
         </div>
         <div className="text-7xl font-bold text-center mt-4">[B | Â | G]</div>
       </header>
 
       <main className="text-center bg-[#eef3ee]">
-        <div className="flex flex-col gap-3 p-6">
+        <div className="flex flex-col gap-3 p-6 items-center">
           <div className="mx-auto">
             <div className="text-xl">BAG Membership</div>
             <img
@@ -24,6 +21,9 @@ function MintPage() {
               height="256px"
               alt="Business Advocacy Group logo"
             />
+          </div>
+          <div>
+            <ConnectButton />
           </div>
           <div>
             <Mint />
