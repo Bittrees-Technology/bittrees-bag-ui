@@ -33,3 +33,9 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## To deploy app to Azure
+
+Create a PR that merges `main` to `azcontainerdeploy-prod` to deploy to production at <https://bag-website-caddy.eastus.azurecontainer.io>
+
+Or merge to `azcontainerdeploy-dev` to deploy to dev at <http://bag-website-dev.eastus.azurecontainer.io>.
