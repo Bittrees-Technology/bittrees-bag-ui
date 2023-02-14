@@ -23,10 +23,10 @@ function MintPage() {
             />
           </div>
           <div>
-            <ConnectButton />
+            <Mint />
           </div>
           <div>
-            <Mint />
+            <ConnectButton />
           </div>
           <div className="mt-8">
             Builders Advocacy Group (BAG) is a Representative Body, Unifying
