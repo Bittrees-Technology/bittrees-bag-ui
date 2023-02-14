@@ -60,7 +60,7 @@ export function Mint() {
         <button className="btn btn-primary" onClick={onClick} disabled={!Boolean(address)}>
           Mint
         </button>
-        {!address && <p className="text-2xl mt-4">Please connect your wallet above.</p>}
+        {!address && <p className="text-2xl mt-4">Please connect your wallet.</p>}
         {isLoading && <p className="text-2xl mt-4">Minting...</p>}
       </div>
     </>
