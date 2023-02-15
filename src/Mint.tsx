@@ -1,10 +1,15 @@
 import { useAccount, usePrepareContractWrite, useContractWrite } from "wagmi";
 import abi from "./abi.json";
-import { goerli } from "wagmi/chains";
+import { goerli, mainnet } from "wagmi/chains";
 import { ethers } from "ethers";
 import { useState } from "react";
 
 const CONTRACT_ADDRESS = "0x6e8c260cB878489c8066Dd75536e5E9B5ca4C288";
+const chainId =
+  process.env.REACT_APP_ENABLE_TESTNETS === "true" ? goerli.id : mainnet.id;
+
+console.info(`Contract: ${CONTRACT_ADDRESS}`);
+console.info(`Chain ID: ${chainId}`);
 
 const mintPrice = "0.0100";
 
@@ -24,7 +29,7 @@ export function Mint() {
     address: CONTRACT_ADDRESS,
     abi,
     functionName: "mintMembership",
-    chainId: goerli.id,
+    chainId: chainId,
     args: [address],
     overrides: { value: ethers.utils.parseEther(total) },
   });
@@ -57,10 +62,16 @@ export function Mint() {
         </div>
       </div>
       <div className="mt-4">
-        <button className="btn btn-primary" onClick={onClick} disabled={!Boolean(address)}>
+        <button
+          className="btn btn-primary"
+          onClick={onClick}
+          disabled={!Boolean(address)}
+        >
           Mint
         </button>
-        {!address && <p className="text-2xl mt-4">Please connect your wallet.</p>}
+        {!address && (
+          <p className="text-2xl mt-4">Please connect your wallet.</p>
+        )}
         {isLoading && <p className="text-2xl mt-4">Minting...</p>}
       </div>
     </>
