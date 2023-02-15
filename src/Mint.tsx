@@ -25,7 +25,7 @@ export function Mint() {
 
   const { address } = useAccount();
 
-  const { config } = usePrepareContractWrite({
+  const { config, error } = usePrepareContractWrite({
     address: CONTRACT_ADDRESS,
     abi,
     functionName: "mintMembership",
@@ -61,14 +61,26 @@ export function Mint() {
           {total} <span>ETH</span>
         </div>
       </div>
+      {error && (
+        <div className="text-red-500 m-4 mx-auto max-w-xl">
+          An error occurred preparing the transaction:{" "}
+          {error.message.startsWith(
+            "insufficient funds for intrinsic transaction cost"
+          )
+            ? "insufficient funds for intrinsic transaction cost."
+            : error.message}
+        </div>
+      )}
+
       <div className="mt-4">
         <button
           className="btn btn-primary"
           onClick={onClick}
-          disabled={!Boolean(address)}
+          disabled={!Boolean(address) || Boolean(error)}
         >
           Mint
         </button>
+
         {!address && (
           <p className="text-2xl mt-4">Please connect your wallet.</p>
         )}
