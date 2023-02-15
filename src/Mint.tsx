@@ -13,6 +13,17 @@ console.info(`Chain ID: ${chainId}`);
 
 const mintPrice = "0.0100";
 
+function displayFriendlyError(message: string | undefined): string {
+  if (!message) return "";
+
+  if (
+    message.startsWith("insufficient funds for intrinsic transaction cost")
+  ) {
+    return "insufficient funds for intrinsic transaction cost.";
+  }
+  return message;
+}
+
 export function Mint() {
   const [total, setTotal] = useState(mintPrice);
 
@@ -64,11 +75,7 @@ export function Mint() {
       {error && (
         <div className="text-red-500 m-4 mx-auto max-w-xl">
           An error occurred preparing the transaction:{" "}
-          {error.message.startsWith(
-            "insufficient funds for intrinsic transaction cost"
-          )
-            ? "insufficient funds for intrinsic transaction cost."
-            : error.message}
+          {displayFriendlyError(error.message)}
         </div>
       )}
 
