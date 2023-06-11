@@ -50,8 +50,7 @@ function App() {
             </div>
             <div className="underline w-60">
               <a
-                href="https://app.gitbook.com/invite/l128PJAr3ltvGCqdsBkP/Q9hrQC2Iz4m6KqyvHx3B
-                "
+                href="https://voxelsadvocacy.gitbook.io/bag/builders-advocacy-group/welcome"
                 target="_blank"
                 rel="noreferrer"
               >
