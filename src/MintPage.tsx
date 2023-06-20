@@ -34,23 +34,17 @@ function MintPage() {
           </div>
           <div>Become a Member to Have Your Voice Heard.</div>
           <footer className="flex flex-col gap-6 mx-auto">
-            <div className="underline">
-              <a
-                href="https://twitter.com/voxelsadvocacy"
-                target="_blank"
-                rel="noreferrer"
-              >
-                @voxelsadvocacy
-              </a>
-            </div>
+
             <div>
-              <img
-                src="/bag-logo-circle-smaller.png"
-                width="128px"
-                height="128px"
-                alt="Business Advocacy Group logo"
-                className="grayscale"
-              />
+              <a href="/" className="mx-auto">
+                <img
+                  src="/bag-logo-circle-smaller.png"
+                  width="128px"
+                  height="128px"
+                  alt="Business Advocacy Group logo"
+                  className="grayscale max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
             </div>
           </footer>
         </div>
