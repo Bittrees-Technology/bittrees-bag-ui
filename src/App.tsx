@@ -42,7 +42,7 @@ function App() {
               </a>
             </div>
             <div className="flex justify-center">
-              <Link to="/mint">
+              <Link to="/">
                 <img
                   src="/bag-logo-circle-smaller.png"
                   width="128px"

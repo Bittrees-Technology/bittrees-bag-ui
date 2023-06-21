@@ -4,7 +4,8 @@ import App from "./App";
 import MintPage from "./MintPage";
 import MembersPage from "./MembersPage";
 import reportWebVitals from "./reportWebVitals";
-
+import VisionStatementPage from "./VisionStatementPage";
+import BillOfRightsPage from "./BillOfRightsPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "@rainbow-me/rainbowkit/styles.css";
@@ -55,6 +56,14 @@ const router = createBrowserRouter([
   {
     path: "/mint",
     element: <MintPage />,
+  },
+  {
+    path: "/visionstatement",
+    element: <VisionStatementPage />,
+  },
+  {
+    path: "/billofrights",
+    element: <BillOfRightsPage />,
   },
 ]);
 

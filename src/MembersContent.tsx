@@ -71,19 +71,24 @@ export function MembersContent() {
                   Gift Membership
                 </li>
                 <li className="p-2">
-                <a className="text-black no-underline hover:underline hover:text-green-700" 
+                  <a className="text-black no-underline hover:underline hover:text-green-700" 
                     target="_blank" 
                     rel="noreferrer"
-                    href="https://etherscan.io/token/0xc8121e650bd797d8b9dad00227a9a77ef603a84a#code">Membership Contract</a>
+                    href="https://etherscan.io/token/0x6e8c260cb878489c8066dd75536e5e9b5ca4c288#code">Membership Contract</a>
                 </li>
-                <li className="p-2"><a className="text-black no-underline hover:underline hover:text-green-700" 
-                    href="/mintBRGOV">Mint BRGOV</a></li>
-                <li className="p-2">BRGOV Contract </li>
-                <li className="p-2">Mint BRTC</li>
+                <li className="p-2">Snapshot</li>
                 <li className="p-2">
-                    Stake BRTC
+                  <a className="text-black no-underline hover:underline hover:text-green-700" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    href="https://guild.xyz/bag">Telegram</a>
                 </li>
-                <li className="p-2">Burn BRTC</li>
+                <li className="p-2">
+                  <a className="text-black no-underline hover:underline hover:text-green-700" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    href="https://www.voxels.com/play?coords=W@242W,572N,6U">Clubhouse</a>
+                </li>
               </ul>
 
             </div>
@@ -96,21 +101,23 @@ export function MembersContent() {
                 </li>
                 <li className="p-2">
                   <a className="text-black no-underline hover:underline hover:text-green-700" 
-                    href="/codeofethics">Code of Ethics</a>
-                </li>
-                <li className="p-2">
-                  <a className="text-black no-underline hover:underline hover:text-green-700" 
                     target="_blank" 
                     rel="noreferrer"
                     href="https://docs.google.com/document/d/1ncY1zhrYFzpAh9hrSqCmO6z3dftXTfWV1RXHGHrTwlQ/edit">
-                    Roadmap
+                    Constitution [draft]
+                  </a> 
+                </li>
+                <li className="p-2">
+                  <a className="text-black no-underline hover:underline hover:text-green-700" 
+                    href="/billofrights">
+                    Bill of Rights
                   </a>  
                 </li>
                 <li className="p-2">
                   <a className="text-black no-underline hover:underline hover:text-green-700" 
                     target="_blank" 
                     rel="noreferrer"
-                    href="https://docs.google.com/drawings/d/1_AYqj8boh7o8d_CrhSbSUtlvrs0fpTOUEIOxqGd_s58/">
+                    href="https://docs.google.com/drawings/d/1s1c37-FNRjz3ZZP35UCWn-4viLZrAmQoMG1Q-IL7QQU/edit?usp=sharing">
                     Org Chart Diagram
                   </a>
                 </li>
@@ -118,23 +125,7 @@ export function MembersContent() {
                   <a className="text-black no-underline hover:underline hover:text-green-700" 
                     target="_blank" 
                     rel="noreferrer"
-                    href="https://guild.xyz/bittrees-research">
-                    Telegram
-                  </a>
-                </li>
-                <li className="p-2">
-                  <a className="text-black no-underline hover:underline hover:text-green-700" 
-                    target="_blank" 
-                    rel="noreferrer"
-                    href="https://twitter.com/BittreesR">Twitter</a>
-                </li>
-                <li className="p-2">
-                  <a className="text-black no-underline hover:underline hover:text-green-700" 
-                    target="_blank" 
-                    rel="noreferrer"
-                    href="https://paragraph.xyz/@bittrees_research">
-                    Paragraph
-                  </a>
+                    href="https://twitter.com/voxelsadvocacy">Twitter</a>
                 </li>
               </ul>
             </div>
