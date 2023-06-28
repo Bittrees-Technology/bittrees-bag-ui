@@ -1,6 +1,6 @@
 # bittrees-nft-deployer-ui-for-bag
 
-NFT Deployer for Builders Advocacy Group (BAG)
+Web UI for voxelsadvocacy.org
 
 Includes:
 
