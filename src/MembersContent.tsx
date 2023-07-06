@@ -103,7 +103,7 @@ export function MembersContent() {
                   <a className="text-black no-underline hover:underline hover:text-green-700" 
                     target="_blank" 
                     rel="noreferrer"
-                    href="https://docs.google.com/document/d/1ncY1zhrYFzpAh9hrSqCmO6z3dftXTfWV1RXHGHrTwlQ/edit">
+                    href="https://docs.google.com/document/d/1BxcIkhfPnMf305VxGrEgEnfH2de_kFkL1iE43dI1WRo/edit?usp=sharing">
                     Constitution [draft]
                   </a> 
                 </li>
