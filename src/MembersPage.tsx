@@ -13,17 +13,15 @@ function MembersPage() {
 
       <main className="text-center bg-[#dedede]">
         <div className="flex flex-col gap-3 p-4 md:p-12 items-center">
-
-
-          <div className="mt-4">
+          <div>
             <MembersContent />
           </div>
 
           <footer className="flex flex-col gap-6 mx-auto mt-4">
             <span>
-            <div>
-              <ConnectButton />
-            </div>
+              <div>
+                <ConnectButton />
+              </div>
             </span>
 
             <div className="flex w-full justify-center items-center">
