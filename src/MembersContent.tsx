@@ -88,7 +88,16 @@ export function MembersContent() {
                     Forum
                   </a>
                 </li>
-                <li className="p-2">Snapshot</li>
+                <li className="p-2">
+                  <a
+                    className="text-black no-underline hover:underline hover:text-green-700"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://snapshot.org/#/buildersadvocacy.eth"
+                  >
+                    Snapshot
+                  </a>
+                </li>
                 <li className="p-2">
                   <a
                     className="text-black no-underline hover:underline hover:text-green-700"
