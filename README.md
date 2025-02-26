@@ -1,4 +1,4 @@
-# bittrees-bag-ui
+# bag-ui
 
 Web UI for voxelsadvocacy.org (BAG - Builders Advocacy Group)
 
